@@ -1,0 +1,29 @@
+{
+  "name": "w5-bot-beta",
+  "description": "w5-bot beta (a whatsapp bot build with nodejs)",
+  "repository": "https://github.com/w5-bot-2/W5-BOT-beta",
+  "logo": "https://i.hizliresim.com/hn71uc7.jpg?format=jpg&name=900x900",
+  "repository": "https://github.com/w5-bot-2/W5-BOT-beta",
+  "logo": "https://i.hizliresim.com/hn71uc7.jpg?format=jpg&name=900x900",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "w5-bot-beta"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
